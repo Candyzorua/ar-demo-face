@@ -15,10 +15,20 @@
                             Accessory
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item"
+
+                            <!--Glasses-->
+                            <li><a *ngIf="mode == 'glasses'" class="dropdown-item"
                                     onclick='WebARRocksMirror.load("assets/3d-models/glasses1.glb")'>Glasses 1</a></li>
-                            <li><a class="dropdown-item"
+                            <li><a *ngIf="mode == 'glasses'" class="dropdown-item"
                                     onclick='WebARRocksMirror.load("assets/3d-models/glasses2.glb")'>Glasses 2</a></li>
+
+                            <!--Lipstick-->
+                            <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [1.0, 0.0, 0.3])'>Red</a></li>
+                            <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 1.0])'>Blue</a></li>
+                            <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 0.0])'>Black</a></li>
                         </ul>
                     </div>
                 </li>
@@ -29,12 +39,10 @@
                             Mode
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" *ngIf="mode !=='shoes-on-vto'"
-                                    (click)="switchMode('shoes-on-vto')">Shoes
-                                    On</a></li>
-                            <li><a class="dropdown-item" *ngIf="mode !=='barefoot-vto'"
-                                    (click)="switchMode('barefoot-vto')">Shoes
-                                    Off</a></li>
+                            <li><a class="dropdown-item" *ngIf="mode !=='glasses'"
+                                    (click)="switchMode('glasses')">Glasses</a></li>
+                            <li><a class="dropdown-item" *ngIf="mode !=='lipstick'"
+                                    (click)="switchMode('lipstick')">Lipstick</a></li>
                         </ul>
                     </div>
                 </li>

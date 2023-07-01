@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
 import { VtoService } from 'src/services/vto-service/vto.service';
+declare var WEBARROCKSFACE: any;
 declare var WebARRocksMirror: any;
-declare var WEBARROCKSHAND: any;
 
 @Component({
   selector: 'app-root',
@@ -12,26 +11,23 @@ declare var WEBARROCKSHAND: any;
 })
 
 export class AppComponent {
-  public shoeRightPath!: BehaviorSubject<string>;
-  public mode: string = 'glasses';
+  public mode: string = "";
 
   constructor(
-    private vtoService: VtoService,
-    private router: Router
+    private router: Router,
+    private vtoService: VtoService
   ) {
-    this.shoeRightPath = vtoService.getShoeRightPath();
-  }
-
-  swapShoe(shoeRightPath: string): void {
-    this.shoeRightPath.next(shoeRightPath);
+    vtoService.getMode().subscribe((newMode: string) => {
+      this.mode = newMode;
+    })
   }
 
   switchMode(path: string) {
-    
-    // set mode so correct button is disabled in view
-    this.mode = path;
-    WEBARROCKSHAND.destroy().then(() => {
-    this.router.navigate(['/' + path]);
-    });
+    WEBARROCKSFACE.destroy()
+      .then(() => {
+        WebARRocksMirror.destroy()
+      }).then(() => {
+        this.router.navigate(['/' + path]);
+      });
   }
 }

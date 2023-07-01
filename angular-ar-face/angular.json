@@ -35,7 +35,9 @@
             ],
             "scripts": [
               "src/assets/web-ar-rocks-face-custom/dist/WebARRocksFace.js",
+              "src/assets/web-ar-rocks-face-custom/helpers/WebARRocksFaceShape2DHelper.js",
               "src/assets/web-ar-rocks-face-custom/helpers/WebARRocksFaceThreeHelper.js",
+              "src/assets/web-ar-rocks-face-custom/helpers/WebARRocksResizer.js",
               "src/assets/web-ar-rocks-face-custom/libs/three/v136/build/three.js",
               "src/assets/web-ar-rocks-face-custom/libs/three/v136/examples/js/loaders/GLTFLoader.js",
               "src/assets/web-ar-rocks-face-custom/libs/three/v136/examples/js/loaders/RGBELoader.js",
@@ -48,7 +50,8 @@
               "src/assets/web-ar-rocks-face-custom/libs/three/v136/examples/js/postprocessing/SSAARenderPass.js",
               "src/assets/web-ar-rocks-face-custom/libs/three/v136/examples/js/postprocessing/TAARenderPass.js",
               "src/assets/web-ar-rocks-face-custom/helpers/WebARRocksMirror.js",
-              "src/assets/web-ar-rocks-face-custom/helpers/landmarksStabilizers/OneEuroLMStabilizer.js"]
+              "src/assets/web-ar-rocks-face-custom/helpers/landmarksStabilizers/OneEuroLMStabilizer.js"
+            ]
           },
           "configurations": {
             "production": {

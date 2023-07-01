@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#WebARRocksFaceCanvasAR,
+#WebARRocksFaceCanvasVideo {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    /* mirror the canvas: */
+    transform: rotateY(180deg);
+}
+
+#WebARRocksFaceCanvasVideo {
+    z-index: 0;
+}
+
+#WebARRocksFaceCanvasAR {
+    z-index: 1;
+}
