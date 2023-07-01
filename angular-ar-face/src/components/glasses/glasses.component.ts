@@ -9,7 +9,6 @@ import { VtoService } from 'src/services/vto-service/vto.service';
     styleUrls: ['./glasses.component.scss']
 })
 export class GlassesComponent {
-    private three: any
     private initParams: any;
 
     constructor(
