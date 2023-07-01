@@ -21,14 +21,19 @@
                                     onclick='WebARRocksMirror.load("assets/3d-models/glasses1.glb")'>Glasses 1</a></li>
                             <li><a *ngIf="mode == 'glasses'" class="dropdown-item"
                                     onclick='WebARRocksMirror.load("assets/3d-models/glasses2.glb")'>Glasses 2</a></li>
+                            <li><a *ngIf="mode == 'glasses'" class="dropdown-item"
+                                    onclick='WebARRocksMirror.load("assets/3d-models/glasses3.glb")'>Glasses 3</a></li>
 
                             <!--Lipstick-->
                             <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
-                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [1.0, 0.0, 0.3])'>Red</a></li>
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [1.0, 0.0, 0.3])'>Red</a>
+                            </li>
                             <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
-                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 1.0])'>Blue</a></li>
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 1.0])'>Blue</a>
+                            </li>
                             <li><a *ngIf="mode == 'lipstick'" class="dropdown-item"
-                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 0.0])'>Black</a></li>
+                                    onclick='WebARRocksFaceShape2DHelper.set_uniformValue("LIPS", "lipstickColor", [0.0, 0.0, 0.0])'>Black</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
