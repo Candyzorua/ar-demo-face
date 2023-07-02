@@ -3,7 +3,7 @@
 ## Overview
 - An augmented reality web app where you can choose different accessories to try on on your face.
 - Currently includes **glasses** and **lipstick** functionalities.
-- Uses Angular 16 and [WebAR.rocks.face](https://github.com/WebAR-rocks/WebAR.rocks.face), a JavaScript library for face tracking.
+- Uses Angular 16 and [WebAR.rocks.face](https://github.com/WebAR-rocks/WebAR.rocks.face), a JavaScript library for face virtual try-on.
 - [Netlify deploy link](https://lmswebarface.netlify.app) 
 
 ## Changelog
