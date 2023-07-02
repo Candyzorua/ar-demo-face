@@ -1,20 +1,17 @@
-# Virtual Try-On In Angular 16
+# Virtual Try-On (Face) In Angular 16
 
 ## Overview
-- An augmented reality web app where you can choose different accessories to try on different parts of your body.
-- Uses Angular 16 and [WebAR.rocks.hand](https://github.com/WebAR-rocks/WebAR.rocks.hand), a JavaScript library for hand tracking.
-- [Netlify deploy link](https://comfy-mermaid-e2563f.netlify.app/barefoot-vto) 
+- An augmented reality web app where you can choose different accessories to try on on your face.
+- Currently includes **glasses** and **lipstick** functionalities.
+- Uses Angular 16 and [WebAR.rocks.face](https://github.com/WebAR-rocks/WebAR.rocks.face), a JavaScript library for face tracking.
+- [Netlify deploy link](https://lmswebarface.netlify.app) 
 
 ## Changelog
-### 24/6/2023
-- UI updated to use a navbar and dropdowns.
-- Users able to virtually try on shoes.
-  - Users able to switch between two choices of shoes.
-  - Users able to switch between barefoot mode and shoes-on mode.
 
-## In Progress
-- Add functionality to try on glasses and makeup.
-- Add compatibility requirements in README.
-- Add more options for shoes.
-- Improve accuracy of foot occlusion and shoe fitting.
+### 1/7/2023
+- Updated to include wooden frame glasses from Sketchfab.
+
+### 28/6/2023
+- Include glasses and lipstick functionalities. Uses demo 3D models for shoes and demo RGB colors for the lipstick.
+- Created basic UI using Bootstrap.
   
